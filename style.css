@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+}
+
+.choice-img {
+    width: 150px;
+    height: auto;
+    border: 3px solid skyblue;
+    margin: 10px;
+}
+
+.choices-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.blink {
+    animation: blink-animation 1s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Popup Styles */
+.hidden {
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    animation: popup-animation 0.5s ease-out;
+}
+
+@keyframes popup-animation {
+    0% {
+        transform: scale(0);
+    }
+    60% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: skyblue;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: deepskyblue;
+}
+.image-container img {
+    width: 200px;
+    height: auto;
+    border-color: skyblue;
+    border-width: 10px;
+    border-style: solid;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.5); 
+    cursor: pointer;
+}
+.footer-text {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    font-size: 15px;
+}
+marquee{
+    font-size: 30px;
+}
+@media (max-width: 768px) {
+    .welcome-message {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .image-container img {
+        width: 100px;
+        height: auto;
+    }
+
+    .popup-content {
+        width: 90%; /* Adjust popup width for smaller screens */
+        padding: 20px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-message {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .image-container img {
+        width: 80px;
+        height: auto;
+    }
+
+    .popup-content {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .footer-text {
+        font-size: 10px;
+    }
+}

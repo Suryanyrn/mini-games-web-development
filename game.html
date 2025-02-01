@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stone Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1>THANKS FOR PLAYING THE GAME</h1>
+        <marquee><h1>***** HAVE A NICE DAY *****</h1></marquee>
+        <hr>
+        <div class="choices-container">
+            <div>
+                <h2>Your Choice</h2>
+                <img id="userChoice" src="" alt="Your choice" class="choice-img">
+            </div>
+            <div>
+                <h2>My Choice</h2>
+                <img id="cpuChoice" src="" alt="CPU choice" class="choice-img">
+            </div>
+        </div>
+        <h1 id="result" class="blink">Result: </h1>
+    </center>
+
+    <!-- Popup for win/lose message -->
+    <div id="popup" class="hidden">
+        <div class="popup-content">
+            <h2 id="popupMessage"></h2>
+            <button onclick="closePopup()">Close</button>
+            <a href="index.html"><button>Try Again</button></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
