@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Selection</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.jpg">
+    <link rel="stylesheet">
     <style>
         body {
-            display: flex;
+            display: block;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             flex-direction: column;
             text-align: center;
             font-family: Arial, sans-serif;
@@ -42,16 +42,33 @@
             margin-bottom: 10px;
         }
         .game-button:hover {
-            transform: scale(1.1);
+            transform: scale(1.4);
+        }
+        footer {
+        background: #343a40;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 12rem;
+        display: block;
+
+        }
+
+        footer p {      
+        margin: 0;
+        }
+        marquee{
+            font-size: 36px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <center>
-            <h1>WELCOME</h1>
-            <b><marquee>***** LET'S PLAY SOMETHING AMAZING *****</marquee></b>
-            <hr>
+    <center>
+        <h1>WELCOME</h1>
+        <b><marquee>***** LET'S PLAY SOMETHING AMAZING *****</marquee></b>
+    </center>
+    <hr>
+        <div class="container">
             <div class="game-options">
             <a href="sps.html" class="game-button">
                 <img src="stone.jpg" alt="Stone Paper Scissors">
@@ -63,16 +80,13 @@
             </a>
         </div>
         </div>
-    <hr>
-    <hr>
     <center>
         <div>
             <footer>
                <p>Disclaimer: Content is for entertainment purposes only.  Contact us at suryanyrn0201@gmail.com
-                <p>© 2024 STONE PAPER SCISSOR. All Rights Reserved.</p>
+                <p>© 2024 SURYA MINI GAMES. All Rights Reserved.</p>
             </footer>
         </div>
     </center>
-</body>
 </body>
 </html>
