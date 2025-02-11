@@ -40,3 +40,7 @@ Copy
 Edit
 
 Let me know if you want any changes! 😊
+
+**play game at**
+
+https://spsgame.neocities.org/
